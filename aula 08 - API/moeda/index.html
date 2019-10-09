@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <style>
+            h1 {
+                font-size: 50px;
+                color: green;
+            }
+
+            body {
+                background-size: cover;
+                background-image: url(imagens/cotacao_wallpaper.png);
+                color: white;
+            }
+
+            #caixa_conteudo {
+                width: 500px;
+                height: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20vh;
+
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            select {
+                width: 150px;
+                background-color: darkgray;
+                color: aliceblue;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="caixa_conteudo">
+            <h1>Conversão de Moedas</h1>
+                De:
+                <select id="slcmoeda">
+                    <option value="real">Real</option>
+                </select>
+                <br>
+                <br>
+                <input type="text">
+                <br>
+                <br>
+                Para:
+                <select id="slcdestino">
+                    <option id="opt" value="USD">Dollar</option>
+                    <option id="opt" value="ARS">Peso</option>
+                    <option id="opt" value="BTC">Bitcoin</option>
+                    <option id="opt" value="EUR">Euro</option>
+                    <option id="opt" value="GBP">Pound Sterling</option>
+                </select>
+                <br>
+                <br>
+                <input type="button" id="btncalcular" value="Calcular">
+                <input type="text" name="txtresultado" value="">
+        </div>
+        <!--  -->
+        <script src="moeda.js"></script>
+    </body>
+
+</html>

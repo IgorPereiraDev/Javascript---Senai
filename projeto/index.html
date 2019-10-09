@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            projeto json
+        </title>
+
+        <style type="text/css">
+            #div_principal {
+                width: 520px;
+                min-height: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+                border: solid 1px;
+
+                background-color: orangered;
+            }
+
+            #div_pesquisar {
+                width: inherit;
+                height: 70px;
+
+                background-color: black;
+            }
+
+            #div_input {
+                width: 200px;
+                height: 40px;
+                float: left;
+                margin-top: 15px;
+                margin-left: 10px;
+            }
+
+            #div_input > input {
+                width: inherit;
+                height: inherit;
+            }
+
+            #div_botao {
+                width: 150px;
+                height: 30px;
+                float: right;
+                margin-top: 20px;
+                margin-right: 120px;
+
+                background-color: yellow;
+            }
+
+            #div_botao > input {
+                width: inherit;
+                height: inherit;
+            }
+
+            #div_mostra_dados {
+                width: inherit;
+                min-height: 430px;
+                overflow: hidden;
+
+                background-color: darkgray;
+            }
+
+            .caixa_resultado {
+                width: 516px;
+                height: 55px;
+                border: solid 2px;
+            }
+
+            .div_quantidade {
+                width: 40px;
+                height: 50px;
+                float: left;
+                text-align: center;
+            }
+
+            .div_cidades {
+                width: 440px;
+                height: 50px;
+                float: right;
+                box-sizing: border-box;
+                padding-left: 10px;
+
+                /* background-color: blueviolet; */
+            }
+
+            .cor1 {
+                background-color: white;
+            }
+
+            .cor2 {
+                background-color: darkgray;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="div_principal">
+
+            <div id="div_pesquisar">
+                <div id="div_input">
+                    <input placeholder="Digite a sigla de um estado" type="text" id="txtdigite" value="" maxlength="2">
+                </div>
+                <div id="div_botao">
+                    <input type="button" id="btnpesquisar" value="Pesquisar">
+                </div>
+            </div>
+
+            <div id="div_mostra_dados">
+                
+            </div>
+
+        </div>
+        <script src="cidades.js"></script>
+    </body>
+</html>

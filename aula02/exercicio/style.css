@@ -1,0 +1,26 @@
+.titulo{
+    text-align: center;
+}
+
+.conteiner{
+    display: grid;
+    background: rgb(138, 187, 243);
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 40vw;
+    height: 50vh;
+    margin: 1vh auto;   
+    padding: 1vh;
+    grid-gap: 10px;
+    box-shadow: 10px 10px 10px;
+}
+
+.entrada, .acao, .saida{
+    display: grid;
+    width: 40vw;
+    justify-content: center;
+}
+
+.acao{
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-gap: 10px;
+}
